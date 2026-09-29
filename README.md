@@ -1,2 +1,2 @@
-# cv-application
-A simple CV generator.
+# a Simple CV Generator
+
