@@ -3,7 +3,7 @@
 	padding: 0;
 	margin: 0;
 	font-size: 20px;
-	font-family: "Courier New", Courier, monospace;
+	font-family: sans-serif;
 }
 
 div.app {
@@ -11,6 +11,10 @@ div.app {
 	border: 3px solid black;
 	padding: 10px;
 	background-color: antiquewhite;
+}
+
+div.education-field div.experience-field {
+	width: 800px;
 }
 
 div.input-field {
