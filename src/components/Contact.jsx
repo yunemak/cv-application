@@ -25,7 +25,7 @@ function Contact() {
 	}
 
 	return (
-		<form>
+		<form onSubmit={handleClick}>
 			<div className="contact-form">
 				<label htmlFor="full-name">Full Name</label>
 				<input
@@ -49,9 +49,7 @@ function Contact() {
 					value={phone}
 				/>
 			</div>
-			<button onSubmit={handleClick}>
-				{isSubmitted ? "Edit" : "Submit"}
-			</button>
+			<button>{isSubmitted ? "Edit" : "Submit"}</button>
 		</form>
 	);
 }
