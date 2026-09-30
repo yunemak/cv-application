@@ -1,5 +1,7 @@
 # React CV Generator 📝
 
+[Live Demo](https://cv-application-lyart-nine.vercel.app/)
+
 A clean, interactive, and responsive CV application built with **React** as part of [The Odin Project](https://www.theodinproject.com/) curriculum. This app allows users to input their personal information, education history, and work experience with a real-time preview toggle.
 
 ## 🚀 Features
