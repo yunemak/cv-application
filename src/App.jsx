@@ -107,7 +107,7 @@ function App() {
 						{isExperienceSubmitted ? positionTitle : ""}
 					</p>
 					<p>
-						<b>Main Responsibilites:</b>
+						<b>Main Responsibilities:</b>
 						{isExperienceSubmitted ? mainResponsibilities : ""}
 					</p>
 					<p>
