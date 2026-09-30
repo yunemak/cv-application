@@ -22,6 +22,7 @@ div.input-field,
 div.output-field {
 	margin: 20px;
 	padding: 20px;
+	min-width: 600px;
 	border: 1px solid black;
 	background-color: white;
 	display: flex;

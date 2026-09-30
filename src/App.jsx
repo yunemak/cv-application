@@ -29,6 +29,7 @@ function App() {
 			</div>
 			<div className="output-field">
 				<h1>CV Preview</h1>
+				<h2>{isContactSubmitted ? fullName : ""}</h2>
 			</div>
 		</div>
 	);
