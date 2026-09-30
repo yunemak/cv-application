@@ -5,18 +5,23 @@ import InputField from "./components/InputField";
 function App() {
 	return (
 		<div className="app">
-			<h1>CV Application</h1>
-			<form>
-				<InputField labelText="Full Name" type="text" />
-				<InputField labelText="Email" type="email" />
-				<InputField labelText="Phone" type="tel" />
-			</form>
-			<form>
-				<Education />
-			</form>
-			<form>
-				<Experience />
-			</form>
+			<div className="form-field">
+				<h1>CV Application</h1>
+				<form>
+					<InputField labelText="Full Name" type="text" />
+					<InputField labelText="Email" type="email" />
+					<InputField labelText="Phone" type="tel" />
+					<button>Submit</button>
+				</form>
+				<hr />
+				<form>
+					<Education />
+				</form>
+				<form>
+					<Experience />
+				</form>
+			</div>
+			<div className="output-field"></div>
 		</div>
 	);
 }
