@@ -9,6 +9,7 @@
 body {
 	background-color: rgb(233, 233, 233);
 	display: flex;
+	justify-content: center;
 	gap: 20px;
 }
 
