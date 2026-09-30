@@ -4,17 +4,24 @@ import Contact from "./components/Contact";
 import { useState } from "react";
 
 function App() {
+	// Contact
 	let [isContactSubmitted, setIsContactSubmited] = useState(false);
 	let [fullName, setFullName] = useState("");
 	let [email, setEmail] = useState("");
 	let [phone, setPhone] = useState("");
-
+	// Education
 	let [isEducationSubmitted, setIsEducationSubmitted] = useState(false);
 	let [school, setSchool] = useState("");
 	let [study, setStudy] = useState("");
 	let [studyDateStart, setStudyDateStart] = useState("");
 	let [studyDateFinish, setStudyDateFinish] = useState("");
-
+	// Experience
+	let [isExperienceSubmitted, setIsExperienceSubmitted] = useState(false);
+	let [companyName, setCompanyName] = useState("");
+	let [positionTitle, setPositionTitle] = useState("");
+	let [mainResponsibilities, setMainResponsibilities] = useState("");
+	let [experienceDateStart, setExperienceDateStart] = useState("");
+	let [experienceDateFinish, setExperienceDateFinish] = useState("");
 	return (
 		<div className="app">
 			<div className="input-field">
@@ -43,7 +50,20 @@ function App() {
 					setStudyDateFinish={setStudyDateFinish}
 				/>
 				<hr />
-				<Experience />
+				<Experience
+					isExperienceSubmitted={isExperienceSubmitted}
+					setIsExperienceSubmitted={setIsExperienceSubmitted}
+					companyName={companyName}
+					setCompanyName={setCompanyName}
+					positionTitle={positionTitle}
+					setPositionTitle={setPositionTitle}
+					mainResponsibilities={mainResponsibilities}
+					setMainResponsibilities={setMainResponsibilities}
+					experienceDateStart={experienceDateStart}
+					setExperienceDateStart={setExperienceDateStart}
+					experienceDateFinish={experienceDateFinish}
+					setExperienceDateFinish={setExperienceDateFinish}
+				/>
 			</div>
 			<div className="output-field">
 				<h1>CV Preview</h1>
@@ -76,7 +96,29 @@ function App() {
 						{isEducationSubmitted ? studyDateFinish : ""}
 					</p>
 				</div>
-				<div className="experience-preview"></div>
+				<hr />
+				<div className="experience-preview">
+					<p>
+						<b>Company Name: </b>
+						{isExperienceSubmitted ? companyName : ""}
+					</p>
+					<p>
+						<b>Position Title: </b>
+						{isExperienceSubmitted ? positionTitle : ""}
+					</p>
+					<p>
+						<b>Main Responsibilites:</b>
+						{isExperienceSubmitted ? mainResponsibilities : ""}
+					</p>
+					<p>
+						<b>Date Start: </b>
+						{isExperienceSubmitted ? experienceDateStart : ""}
+					</p>
+					<p>
+						<b>Date Finish: </b>
+						{isExperienceSubmitted ? experienceDateFinish : ""}
+					</p>
+				</div>
 			</div>
 		</div>
 	);
