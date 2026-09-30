@@ -25,19 +25,9 @@ div.form-field {
 	gap: 20px;
 }
 
-div.education-field div.experience-field {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-}
-
-form {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-}
-
-div.input-field {
+form.contact-form {
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	row-gap: 20px;
 }
