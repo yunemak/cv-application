@@ -14,6 +14,12 @@ body {
 }
 
 div.app {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div.input-field,
+div.output-field {
 	margin: 20px;
 	padding: 20px;
 	border: 1px solid black;

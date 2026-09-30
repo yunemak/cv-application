@@ -1,15 +1,18 @@
 import "../styles/form.css";
-import { useState } from "react";
 
-function Contact() {
-	let [isSubmitted, setIsSubmited] = useState(false);
-	let [fullName, setFullName] = useState("");
-	let [email, setEmail] = useState("");
-	let [phone, setPhone] = useState("");
-
+function Contact({
+	isContactSubmitted,
+	setIsContactSubmited,
+	fullName,
+	setFullName,
+	email,
+	setEmail,
+	phone,
+	setPhone,
+}) {
 	function handleClick(e) {
 		e.preventDefault();
-		setIsSubmited(!isSubmitted);
+		setIsContactSubmited(!isContactSubmitted);
 	}
 
 	function handleFullName(e) {
@@ -49,7 +52,7 @@ function Contact() {
 					value={phone}
 				/>
 			</div>
-			<button>{isSubmitted ? "Edit" : "Submit"}</button>
+			<button>{isContactSubmitted ? "Edit" : "Submit"}</button>
 		</form>
 	);
 }
