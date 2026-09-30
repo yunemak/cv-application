@@ -2,11 +2,17 @@ import InputField from "./InputField";
 
 function Education() {
 	return (
-		<div className="education-field">
-			<InputField labelText="School" type="text" />
-			<InputField labelText="Title of Study" type="text" />
-			<InputField labelText="Date of Study" type="date" />
-		</div>
+		<form>
+			<div className="education-form">
+				<label>School</label>
+				<input type="text" />
+				<label>Title of Study</label>
+				<input type="text" />
+				<label>Date of Study</label>
+				<input type="date" />
+			</div>
+			<button>Submit</button>
+		</form>
 	);
 }
 

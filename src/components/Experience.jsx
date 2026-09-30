@@ -2,14 +2,21 @@ import InputField from "./InputField";
 
 function Experience() {
 	return (
-		<div className="experience-field">
-			<InputField labelText="Company Name" type="text" />
-			<InputField labelText="Poisition Title" type="text" />
-			<label>Main Responsibilities</label>
-			<textarea></textarea>
-			<InputField labelText="Started from" type="date" />
-			<InputField labelText="Finished" type="date" />
-		</div>
+		<form>
+			<div className="experience-form">
+				<label>Company Name</label>
+				<input type="text" />
+				<label>Position Title</label>
+				<input type="text" />
+				<label>Main Responsibilities</label>
+				<textarea></textarea>
+				<label>Start</label>
+				<input type="date" />
+				<label>Finish</label>
+				<input type="date" />
+			</div>
+			<button>Submit</button>
+		</form>
 	);
 }
 

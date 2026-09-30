@@ -25,7 +25,9 @@ div.form-field {
 	gap: 20px;
 }
 
-form.contact-form {
+.contact-form,
+.education-form,
+.experience-form {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;

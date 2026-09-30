@@ -9,12 +9,9 @@ function App() {
 				<h1>CV Application</h1>
 				<Contact />
 				<hr />
-				<form>
-					<Education />
-				</form>
-				<form>
-					<Experience />
-				</form>
+				<Education />
+				<hr />
+				<Experience />
 			</div>
 			<div className="output-field"></div>
 		</div>
