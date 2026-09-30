@@ -29,7 +29,20 @@ function App() {
 			</div>
 			<div className="output-field">
 				<h1>CV Preview</h1>
-				<h2>{isContactSubmitted ? fullName : ""}</h2>
+				<div className="contact-preview">
+					<p>
+						<b>Full Name:</b> {isContactSubmitted ? fullName : ""}
+					</p>
+					<p>
+						<b>Email:</b> {isContactSubmitted ? email : ""}
+					</p>
+					<p>
+						<b>Phone:</b> {isContactSubmitted ? phone : ""}
+					</p>
+				</div>
+				<hr />
+				<div className="education-preview"></div>
+				<div className="experience-preview"></div>
 			</div>
 		</div>
 	);
