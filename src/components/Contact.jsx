@@ -4,12 +4,12 @@ function Contact() {
 	return (
 		<form>
 			<div className="contact-form">
-				<label>Full Name</label>
-				<input type="text" />
-				<label>Email</label>
-				<input type="email" />
-				<label>Phone</label>
-				<input type="tel" />
+				<label htmlFor="full-name">Full Name</label>
+				<input id="full-name" type="text" />
+				<label htmlFor="email">Email</label>
+				<input id="email" type="email" />
+				<label htmlFor="phone">Phone</label>
+				<input id="phone" type="tel" />
 			</div>
 			<button>Submit</button>
 		</form>
