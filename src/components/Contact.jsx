@@ -1,3 +1,5 @@
+import "../styles/form.css";
+
 function Contact() {
 	return (
 		<form>

@@ -17,19 +17,7 @@ div.app {
 	padding: 20px;
 	border: 1px solid black;
 	background-color: white;
-}
-
-div.form-field {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-}
-
-.contact-form,
-.education-form,
-.experience-form {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	row-gap: 20px;
 }

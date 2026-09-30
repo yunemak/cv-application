@@ -1,4 +1,4 @@
-import InputField from "./InputField";
+import "../styles/form.css";
 
 function Education() {
 	return (
