@@ -8,6 +8,13 @@ function App() {
 	let [fullName, setFullName] = useState("");
 	let [email, setEmail] = useState("");
 	let [phone, setPhone] = useState("");
+
+	let [isEducationSubmitted, setIsEducationSubmitted] = useState(false);
+	let [school, setSchool] = useState("");
+	let [study, setStudy] = useState("");
+	let [studyDateStart, setStudyDateStart] = useState("");
+	let [studyDateFinish, setStudyDateFinish] = useState("");
+
 	return (
 		<div className="app">
 			<div className="input-field">
@@ -23,7 +30,18 @@ function App() {
 					setPhone={setPhone}
 				/>
 				<hr />
-				<Education />
+				<Education
+					isEducationSubmitted={isEducationSubmitted}
+					setIsEducationSubmitted={setIsEducationSubmitted}
+					school={school}
+					setSchool={setSchool}
+					study={study}
+					setStudy={setStudy}
+					studyDateStart={studyDateStart}
+					setStudyDateStart={setStudyDateStart}
+					studyDateFinish={studyDateFinish}
+					setStudyDateFinish={setStudyDateFinish}
+				/>
 				<hr />
 				<Experience />
 			</div>
@@ -41,7 +59,23 @@ function App() {
 					</p>
 				</div>
 				<hr />
-				<div className="education-preview"></div>
+				<div className="education-preview">
+					<p>
+						<b>School: </b> {isEducationSubmitted ? school : ""}
+					</p>
+					<p>
+						<b>Title of Study: </b>
+						{isEducationSubmitted ? study : ""}
+					</p>
+					<p>
+						<b>Date Start: </b>
+						{isEducationSubmitted ? studyDateStart : ""}
+					</p>
+					<p>
+						<b>Date Finish: </b>
+						{isEducationSubmitted ? studyDateFinish : ""}
+					</p>
+				</div>
 				<div className="experience-preview"></div>
 			</div>
 		</div>
